@@ -1,0 +1,416 @@
+body{
+    margin-top: 0;
+    border-top:5px solid orange;
+	border-top-color : orange;
+    background-color: #fff;
+    font-family:Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+}
+
+header{
+    background-image: url(../image/image_header_soundcloud.jpg);
+    text-align: center;
+    width:100%;
+    height: 70vh;
+    background-size: cover;
+}
+
+.navBar{
+    width:100%; 
+    background-size: cover;   
+}
+.navBar__content{
+    display:flex;
+    flex-direction: row;
+}
+
+.navBar__content__logo{
+    width: 25%;
+    height: 30px;
+    /* position: absolute; */
+    z-index: 1;
+/*     background-repeat: no-repeat;
+    background-image: url(https://a-v2.sndcdn.com/assets/images/peace-cloud-28ad0963.svg); */
+    display: flex;
+}   
+.navBar__content__btn{
+    display:none;
+}
+
+
+
+.header__content{
+    color:#fff;
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+.header__content__title{
+    width: 80%;
+    margin: auto;
+}
+
+.header__content__title, h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header__content__text{
+    width: 60%;
+    margin: auto;
+    font-size: 14px;
+}
+
+.header__content__button{
+    margin-top: 40px;
+
+}
+
+.button__more{
+    width: 160px;
+    height: 35px;
+    font-size: 16px;
+    padding: 8px ;
+    text-align: center;
+    vertical-align: middle;
+    border: #fff solid 1px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.button__free{
+    text-decoration: none;
+    font-family:Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+    width: 230px;
+    height: 35px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 109, 18);
+    border: 1px solid rgb(236, 109, 18);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.search__section{
+    display: flex;
+    height: 100px;
+}
+
+.main__search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.search, input{
+    width: 450px;
+    height: 25px;
+    margin-right: 30px;
+    margin-top: -2px;
+    border-radius: 5px lighter;
+}
+
+
+.search__button{
+    text-decoration: none;
+    font-family:Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+    width: 230px;
+    height: 25px;
+    padding: 4px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 109, 18);
+    border: 1px solid rgb(236, 109, 18);
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.main__cards__title{
+    text-align: center;
+   
+}
+.main__cards{
+
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    height: 80px;
+    flex-direction: row;
+    width: 100%;
+
+}
+.main__cards__list__mosaic{
+    margin-top: 40px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 2em;
+    font-size: 16px ;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.main__cards__list__mosaic :first-child {
+  
+    align-self: center;
+    
+}
+.main_card_img{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__title__song{
+    font-size: 10px;
+    text-align: left;
+    display: block;
+    margin-top: 0;
+    
+}
+.card__title__artist{
+
+    font-size: 8px;
+    
+}
+.button__tracks{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+
+}
+.button__tracks__playlist{
+
+    text-decoration: none;
+    font-family: Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+    width: 230px;
+    height: 25px;
+    padding: 4px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    background-color: rgb(236, 109, 18);
+    border: 1px solid rgb(236, 109, 18);
+    border-radius: 4px;
+    
+
+}
+
+
+
+/**************** Media Queries ***************/
+@media (max-width:850px){
+
+    .main_card_img{
+        padding: 0 8px 16px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+    }
+}
+@media (max-width:768px){
+    header{
+        background-image: url(../image/image_header_soundcloud.jpg);
+        text-align: center;
+        width:100vw;
+        height: 140vh;
+    }
+
+    .header__content{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__content__button{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__content__button{
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .button__free{
+        margin-top: 15px;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .button__more{
+        margin-right: 0;
+        padding: 0;
+        text-align: middle;
+    }
+    
+    .search__section{
+        height: 60px;
+        margin-top: 30px;
+        display: flex;
+        width: auto;
+        margin: auto;
+    }
+
+    .main__search{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search, input{
+        margin-top: 10px;
+        align-items: center;
+    }
+    /*Section main__card*/
+    
+    .main__cards__title{
+        align-items: center;
+        margin-top: 70px;
+    }
+    .main__cards{
+        
+        
+    }
+    .main__cards{
+
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        height: 80px;
+        flex-direction: row;
+        width: 100%;
+    
+    }
+    .main__cards__list__mosaic{
+        margin-top: 40px;
+        margin-left: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5px 2em;
+        font-size: 16px ;
+        list-style: none;
+        align-items: center;
+        
+    }
+    
+    .main__cards__list__mosaic :first-child {
+      
+        align-self: center;
+        
+    }
+    .main_card_img{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+    .card__title__song{
+        font-size: 10px;
+        text-align: left;
+        margin-top: 0;
+        
+    }
+    .card__title__artist{
+    
+        font-size: 8px;
+        
+    }
+    .button__tracks{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    
+    }
+    .button__tracks__playlist{
+    
+        text-decoration: none;
+        font-family: Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+        width: 230px;
+        height: 25px;
+        padding: 4px;
+        font-size: 16px;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(255, 255, 255);
+        background-color: rgb(236, 109, 18);
+        border: 1px solid rgb(236, 109, 18);
+        border-radius: 4px;
+        
+    
+    }
+    
+    
+} 
+
+@media (min-width:620px){
+    .navBar__content__btn{
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        width:75%;
+        font-size: small;
+        color:rgb(255, 255, 255);
+    }
+
+    button{
+        margin-right: 15px;
+    }
+    
+    .button_log_out{
+        font-family:Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+        width: 90px;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+        vertical-align: middle;
+        border: #fff solid 1px;
+        background-color: black;
+        color: #fff;
+        border-radius: 4px;
+    }
+    .button_sign_in{
+        font-family:Lucida,Lucida,Lucida,Verdana,Tahoma,sans-serif;
+        width: 120px;
+        height: 20px;
+        font-size: 10px;
+        text-align: center;
+        vertical-align: middle;
+        color: rgb(255, 255, 255);
+        background-color: rgb(236, 109, 18);
+        border: 1px solid rgb(236, 109, 18);
+        border-radius: 4px;
+    }
+    .button_ss_bord{
+        width: 120px;
+        height: 20px;
+        text-align: center;
+        vertical-align: middle;
+        /* border:none; */
+        background: none;
+        padding: 0;
+        color:#fff;
+        font-size:0.625rem;
+    }
+
+}
+
+
+ 
